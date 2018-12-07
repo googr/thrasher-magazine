@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>FA</title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<style>
+	.anim { 
+	width: 112.5px; 
+	height: 169px;
+	background-image: url("kadr.jpg");
+    animation: play 2s steps(12) infinite;
+	-webkit-animation: play 2s steps(12) infinite;
+	}
+	@-webkit-keyframes play { 
+		  0% { background-position:    0px 0; } 
+		100% { background-position: -1350px 0; }
+	}
+	@keyframes play { 
+		  0% { background-position:    0px 0; } 
+		100% { background-position: -1350px 0; }
+	}
+	</style>
+  </head>
+  <body>
+  <div class="anim"></div>
+  </body>
+</html>

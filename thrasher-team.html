@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html> 
+<html>
+	<head>
+		<title> Трэш Журнал </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="icon.png" type="image/png">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 0){
+						$('#scroller').fadeIn();
+					} 
+					else {$('#scroller').fadeOut();
+					}
+				});
+				$('#scroller').click(function () {
+				$('body,html').animate({scrollTop: 0}, 400); return false;
+				});
+			});	
+		</script>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/modalwindow.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	
+		<!--Fancy zoom галерея-->
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.shadow.js"></script>
+		<script type="text/javascript" src="js/jquery.ifixpng.js"></script>
+		<script type="text/javascript" src="js/jquery.fancyzoom.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#fancy a').fancyzoom();
+			});
+		</script>
+	
+	</head>
+	<body style="background-color: ivory; background-image: url('images/bg/kingoftheroad.png'); margin: 0;">
+		<div class="Site">
+			<div id="scroller" class="b-top" style="display: none;">
+				<span class="b-top-but purple"><i class="fa fa-arrow-up fa-2x"></i><br>Up!</span>
+			</div>
+			<header>
+				<img class="Logo" src="images/logo.png">
+				<img class="banner"src="https://tpc.googlesyndication.com/simgad/13899600823169427820">
+				<div 	class="search">
+					<form class="navbar-search navbar-form" role="search">
+					  <div class="form-group ">
+						<input type="text" class="form-control purple" placeholder="Search">
+					  
+					  <button type="submit" class="btn btn-info" ><i class="fa fa-search"></i></button>
+					  </div>
+					</form>
+
+				</div>	
+                <div class="Clear"></div>
+			</header>
+			<div class="SlideShow">
+				<img class="slide1" src="images/slideshow/slide1.jpg">
+				<img class="slide2" src="images/slideshow/slide2.jpg">
+				<img class="slide3" src="images/slideshow/slide3.jpg">
+			</div>
+			<div class="Menu"> 
+				<a class="MenuItem" title="Главная" href="index.html">Главная</a>
+				<a class="MenuItem MenuItemActive" title="Команда" href="thrasher-team.html">Команда</a>
+				<a class="MenuItem" title="Зал Мяса" href="thrasher-hall-of-meat.html">Hall of Meat</a>
+				<a class="MenuItem" title="Фото" href="thrasher-photo.html">Снимки</a>
+				<a class="MenuItem" title="Контакты" href="#win1">На связь</a>
+			</div>
+            <div class="MenuMobile ">
+                <div class="btn-group ">
+                  <a class="  btn purple dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-angle-down fa-2x"></i> <i class="fa fa-bars fa-2x"></i></a>
+                  <ul class="dropdown-menu purple">
+                    <li><a title="Главная" href="index.html"><i class="fa fa-bolt"></i> Главная</a></li>
+                    <li class="MenuItemActive"><a title="Команда" href="thrasher-team.html"><i class="fa fa-male"></i> Команда</a></li>
+                    <li><a title="Зал Мяса" href="thrasher-hall-of-meat.html"><i class="fa fa-heartbeat"></i> Hall of Meat</a></li>
+                    <li><a title="Фото" href="thrasher-photo.html"><i class="fa fa-camera-retro"></i> Снимки</a></li>
+                    <li><a title="Контакты" href="#win1"><i class="fa fa-star fa-spin"></i> На связь</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="Clear"></div>
+			<div class="Content">
+				
+<!--team-->		<div class="row">
+				<div  class="thumbnail team col-xs-6 col-md-3 ">
+					<h4>Клинт Уолкер</h4>
+					<img class="thumbnail" src="images/team/ClintWalker.jpg" title="Клинт Уолкер" alt="Клинт Уолкер" >
+					<p><b> aka: </b>Деревенский мальчик</p>
+					<p><b> Возраст: </b> 24</p>
+					<p><b> Рождился: </b> Алтус, США</p>
+					<p><b> Статус: </b> Про</p>
+					<p><b> Спонсоры: </b>Birdhouse, Independent, Active Ride Shop</p>
+					<p><b> Девиз:</b>Король дороги, или умри</p>
+					<p>Следи за ним в Instagram @theclintorous<p>
+					<div class="Clear"></div>
+				</div>
+				<div class=" thumbnail team col-xs-6 col-md-3 ">
+					<h4>Майк Дэвис</h4>
+					<img class=" thumbnail" src="images/team/MikeDavis.jpg" title="Майк Дэвис" alt="Майк Дэвис" >
+					<p><b> aka: </b>Молочный Майк</p>
+					<p><b> Возраст: </b> 24</p>
+					<p><b> Рождился: </b> Портланд, США</p>
+					<p><b> Статус: </b> Ам</p>
+					<p><b> Спонсоры: </b>Birdhouse, Independent, Bones, Nike, Matix, Diamond</p>
+					<p><b> Девиз:</b>Сейчас или никогда</p>
+					<p>Следи за ним в Instagram @mikedavisss<p>
+					<div class="Clear"></div>
+				</div>
+				<div class="thumbnail team col-xs-6 col-md-3 ">
+					<h4>Бэн Рэйборн</h4>
+					<img class="thumbnail" src="images/team/BenRaybourn.jpg" title="Бэн Рэйборн" alt="Бэн Рэйборн" >
+					<p><b> aka: </b>Бэн</p>
+					<p><b> Возраст: </b> 22</p>
+					<p><b> Рождился: </b> Розенберг, США</p>
+					<p><b> Статус: </b> Про</p>
+					<p><b> Спонсоры: </b>Birdhouse, Nike, Indy, Bones, Plague hardware</p>
+					<p><b> Девиз:</b>Танцуй на потолке</p>
+					<p>Следи за ним в Instagram @choadped<p>
+					<div class="Clear"></div>
+				</div>
+				<div class="thumbnail team col-xs-6 col-md-3 ">
+					<h4>Мэт Бергер</h4>
+					<img class="thumbnail" src="images/team/MattBerger.jpg" title="Мэт Бергер" alt="Мэт Бергер" >
+					<p><b> aka: </b>-</p>
+					<p><b> Возраст: </b> 20</p>
+					<p><b> Рождился: </b> Ванкувер, Канада</p>
+					<p><b> Статус: </b> Ам</p>
+					<p><b> Спонсоры: </b>Flip, Monster, Bones, Matix, Etnies, Thunder, Mob</p>
+					<p><b> Девиз:</b>Закончи книгу сам</p>
+					<p>Следи за ним в Instagram @mattberger_<p>
+					<div class="Clear"></div>
+				</div>	
+				<div class="thumbnail team col-xs-6 col-md-3 ">
+					<h4>Крис Руни</h4>
+					<img class="thumbnail" src="images/team/Rhino.jpg" title="Крис Руни" alt="Крис Руни" >
+					<p><b> aka: </b>Рино</p>
+					<p><b> Возраст: </b> Слишком стар, чтобы это знать</p>
+					<p><b> Рождился: </b> Сан Диего, США</p>
+					<p><b> Статус: </b> Мэнеджер команды</p>
+					<p><b> Спонсоры: </b>-</p>
+					<p><b> Девиз:</b>К черту отдых</p>
+					<p>Следи за ним в Instagram @rhino<p>
+					<div class="Clear"></div>
+				</div>
+				<div class="thumbnail team col-xs-6 col-md-3 ">
+					<h4>Эван Смит</h4>
+					<img class="thumbnail" src="images/team/EvanSmith.jpg" title="Эван Смит" alt="Эван Смит" >
+					<p><b> aka: </b>Звездноголовый</p>
+					<p><b> Возраст: </b> 23</p>
+					<p><b> Рождился: </b> Орландо, США</p>
+					<p><b> Статус: </b> Про</p>
+					<p><b> Спонсоры: </b>Element, DC, DC Apparel, Bones</p>
+					<p><b> Девиз:</b>Секретное оружие</p>
+					<p>Следи за ним в Instagram @starheadbody<p>
+					<div class="Clear"></div>
+				</div>		
+				<div class="thumbnail team col-xs-6 col-md-3 ">
+					<h4>Найджа Хъюстон</h4>
+					<img class="thumbnail" src="images/team/NyjahHuston.jpg" title="Джэйк Джонсон" alt="Джэйк Джонсон" >
+					<p><b> aka: </b>Нигел</p>
+					<p><b> Возраст: </b> Слишком стар, чтобы это знать</p>
+					<p><b> Рождился: </b> Сан Диего, США</p>
+					<p><b> Статус: </b> Мэнеджер команды</p>
+					<p><b> Спонсоры: </b>Element, Monster, DC, AYC, Stance, Mob, Ricta</p>
+					<p><b> Девиз:</b> он еще не выиграл …</p>
+					<p>Следи за ним в Instagram @NYJAH_HUSTON<p>
+					<div class="Clear"></div>
+				</div>
+				<div class="thumbnail team col-xs-6 col-md-3 ">
+					<h4>Джэйк Джонсон</h4>
+					<img class="thumbnail" src="images/team/JakeJohnson.jpg" title="Джэйк Джонсон" alt="Джэйк Джонсон" >
+					<p><b> aka: </b>Ювелир</p>
+					<p><b> Возраст: </b> Слишком стар, чтобы это знать</p>
+					<p><b> Рождился: </b> Альбукерке, США</p>
+					<p><b> Статус: </b> Фото-Видео парень</p>
+					<p><b> Спонсоры: </b>-</p>
+					<p><b> Девиз:</b>Не то, ЧТОБЫ Джейк Джонсон</p>
+					<p>Следи за ним в Instagram @jakedajeweler<p>
+					<div class="Clear"></div>
+				</div>				
+				<div class="Clear"></div>
+				</div>
+<!--back-->
+				<a href="#x" class="overlay" id="win1"></a>
+				<div class="popup">
+					<div class="panel panel-primary Content">
+						<div class="panel-heading "> Обратная связь </div>
+						<form class="text_forma" method="post" action="mail.php">
+							<table  class="table">
+								<tr> 
+									<th> 
+										<label for="formAutor"> Имя :</label>
+									</th>
+									<td> 
+										<input style="color: black;" id="formAutor" type='text' name="name">
+									</td> 
+								</tr>
+								<tr> 
+									<th> 
+										<label for="formEmail"> e-mail : </label>
+									</th>
+									<td> 
+										<input style="color: black;" id="formEmail" type='text' name='email'>
+									</td> 
+								</tr> 
+								
+								<tr> 
+									<th> 
+										<label for="formText"> Ваша мысль :</label>
+									</th>
+									<td> 
+										<textarea style="color: black;" id="formText" name='mess'>....</textarea>
+									</td> 
+								</tr>
+								<tr> 
+									<th> 
+										<label for="formPhone">Я не робот:</label>
+									</th>
+									<td> Введите два ненулевых числа и их сумму:<br>
+										<input style="display:inline-block; width: 20px; color: black; " name="a" type="text" size="3"  value="" />
+										+
+										<input style="display:inline-block; width: 20px; color: black; "name="b" type="text" size="3"
+										 value="" />
+										=
+										<input style="display:inline-block; width: 20px; color: black; "name="sum" type="text" size="5"
+										 value="" />
+										 
+									</td> 
+								</tr>
+								<tr> 
+									<th> 
+										
+									</th>
+									<td> 
+										<input type='submit' class="purple" value="Отправить">
+									</td> 
+								</tr>
+								<tr> 
+									<th> 
+										Или через :
+									</th>
+									<td> 
+										<a target=_blank title="linkedin" href="https://www.linkedin.com/pub/andrew-rohozik/b8/691/5b1?domainCountryName=&csrfToken=ajax%3A3072879658331487843"><i class="fa fa-linkedin-square fa-3x"></i></i> </a> 
+										<a title="e-mail" href="mailto:googr@mail.ru"><i class="fa fa-at fa-3x"> </i> </a> 
+										<a title="мой skype" href="skype:googr11"><i class="fa fa-skype fa-3x"> </i> </a>
+										<a target=_blank title="я вконтакте " href="https://vk.com/googr"><i class="fa fa-vk fa-3x"> </i> </a> 
+										<a target=_blank title="я в facebook" href="https://www.facebook.com/andrew.rohozik"><i class="fa fa-facebook fa-3x"> </i> </a>
+										<a target=_blank title="я в instagramm" href="https://instagram.com/googr"><i class="fa fa-instagram fa-3x"> </i> </a> 
+										<a target=_blank title="мой 'канал' в you toube" href="https://www.youtube.com/channel/UC2rggN2tPUy3sJmeeFbt3UA"><i class="fa fa-youtube-square fa-3x"> </i> </a>
+									</td> 
+								</tr>
+							</table>
+						</form>
+						
+					</div>
+					<a class="close"title="Закрыть" href="#close"></a>
+				</div>
+            </div>
+			<footer>
+				<ul class="SiteMap Copyright">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="MenuItemActive"><a href="thrasher-team.html">Команда</a></li>
+                    <li><a href="thrasher-hall-of-meat.html">Hall of Meat</a></li>
+                    <li><a href="thrasher-photo.html">Снимки</a></li>
+                    <li><a href="#win1">На Связь</a></li>
+				</ul>
+				<ul class="Copyright">
+					<li>
+						<a title="На сайт Трэшера" target=_blank href="http://thrashermafazine.com">Официальный сайт Trasher magazine &copy;</a>
+					</li>
+					<li>Часть информации из Wiki </li>
+					<li>Следи за новостями журнала в:</li>
+                    <li>
+						<a target=_blank title="RSS" href="http://www.thrashermagazine.com/index.php?option=com_foobla_rss&task=feed&id=2"><i class="fa fa-rss-square fa-2x"> </i> </a>
+						<a target=_blank title="Thrasher page in facebook" href="https://www.facebook.com/ThrasherMagazine"><i class="fa fa-facebook-square fa-2x"> </i> </a>
+						<a target=_blank title="Thrasher page in instagramm" href="https://instagram.com/thrashermag"><i class="fa fa-instagram fa-2x"> </i> </a> 
+						<a target=_blank title="Thrasher on youtoube" href="https://www.youtube.com/user/ThrasherMagazine"><i class="fa fa-youtube-square fa-2x"> </i> </a>
+						<a target=_blank title="Thrasher in twitter" href="https://twitter.com/ThrasherMag"><i class="fa fa-twitter-square fa-2x"> </i> </a>
+					</li>
+					<li>Разработал: Рогозик Андрей</li>
+				</ul>
+				<div class="activ" >
+						<img src="hit.gif">
+						<a href="http://jigsaw.w3.org/css-validator/check/referer">
+							<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Правильный CSS!" />
+						</a>	
+				</div>
+				<div class="Clear"></div>
+			</footer>
+		</div>
+		<script>
+			if (document.all && document.documentMode && 8 === document.documentMode) {
+			alert ("Обновите свой Internet Explorer");}
+			if (document.all && (!document.documentMode || (document.documentMode < 8))) {
+			alert ("Обновите свой Internet Explorer");}
+		</script>
+	</body>
+</html>
